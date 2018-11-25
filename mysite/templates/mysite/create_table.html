@@ -1,0 +1,69 @@
+<html>
+<body>
+
+<h2>Create New Table</h2>
+
+<form method="post" id="loginform" action="" novalidate onsubmit="return loginvalidate();">{% csrf_token %}
+    <label>
+        <span>Table Name</span>
+        <input type="text" value="" name="username" id="username" class="floating-item-input input-item nokeyup-common">
+    </label>
+    <label>
+        <p class='capacity'>Capacity</p>
+        <input type="number" value="" name="password" id="password"  class="floating-item-input input-item nokeyup-common" >
+    </label>            
+        <button class="button greybg">Create Table</button>
+</form>
+
+</body>
+</html>
+
+<style type="text/css">
+span{
+    left: -94px;
+    position: relative;
+    top: -5px;
+}
+.capacity{
+    position: relative;
+    left: -104px;
+    top: 25px;
+}
+form{
+    text-align: center;
+    margin-top: 50px;
+}
+h2{
+    position: relative;
+    left: 40%;
+    margin-top: 100px;
+}
+.button{
+    display: block;
+    position: relative;
+    left: 40%;
+    margin-top: 20px;
+}
+#username{
+    display: block;
+    position: relative;
+    left: 40%;
+    width: 20%;
+    height: 30px;
+}
+#password{
+    display: block;
+    position: relative;
+    left: 40%;
+    width: 20%;
+    margin-top: 30px;
+    height: 30px;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+
+</script>
